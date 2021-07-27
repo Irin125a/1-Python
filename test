@@ -1,0 +1,41 @@
+import random
+print ('Программа тест')
+
+name = str (input ("Как тебя зовут?"))
+
+print ("""
+Привет """ + name + " :)")
+
+game = input ("Хочешь сыграть в игру? Ты загадаешь число, а я поробую угадать (Y/N)")
+
+if game == 'Y':
+
+	print ('''
+Загадай число от 0 до 15, я попробую угадать с 3 попыток''')
+	redy = input ("Нажми клавишу Enter, когда будешь готов(а)")
+
+	num = 0
+
+	while num == 4 or (True) :
+		num += 1
+
+		if num == 4:
+			print ('''
+Что ж, сегодня не мой день...''')
+			break
+
+		print ('''
+Попытка №''', num , 'цифра ', random.randint (0, 15))
+
+		answer = input ('Верно? (Y/N)')
+
+		if answer == 'Y':
+
+			print ('''
+Ура!''')
+			break
+
+		elif answer == 'N':
+
+			print ('''
+			''')
